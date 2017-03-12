@@ -1,0 +1,91 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Test App",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/testApp.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}/.",
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG": "*"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "IoTHub Msg Reader",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/hub_recive_msg.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}/.",
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG": "*"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "IoT Device",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/iot_device.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}/.",
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG": "*"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "Register New Device",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/create_device.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}/.",
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG": "*"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${file}"
+        }
+    ]
+}

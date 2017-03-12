@@ -1,0 +1,5 @@
+{
+    "deviceConnectionString": "Azure IoT Hub Device Conection String",
+    "iotHubConnectionString": "Azure IoT Hub Connection String",
+    "deviceID": "Device Id"
+}

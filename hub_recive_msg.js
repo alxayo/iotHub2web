@@ -2,7 +2,9 @@
 
 //read from the local configuration
 var config = require('./config.json');
-var webapp = require('web/app.js'); 
+var WebApp = require('./web/app.js'); 
+
+var iotWebApp;
 
 var EventHubsClient = require('azure-event-hubs').Client;
 
@@ -18,8 +20,11 @@ var printError = function (err) {
 
 var printEvent = function (ehEvent) {
   console.log('Event Received: ');
-  console.log(JSON.stringify(ehEvent.body));
+  var jsonMsg =JSON.stringify(ehEvent.body)
+  console.log(jsonMsg);
   console.log('');
+  //emit msg over WS
+  iotWebApp.emitMsg(jsonMsg);
 };
 
 client.open()
@@ -29,6 +34,8 @@ client.open()
           return client.createReceiver('$Default', partitionId, { 'startAfterTime' : receiveAfterTime}).then(function(receiver) {
             receiver.on('errorReceived', printError);
             receiver.on('message', printEvent);
+            // start the IoT web application
+            iotWebApp = new WebApp();
           });
         });
       })

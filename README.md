@@ -21,7 +21,7 @@ The sample was build using:
 
 The code was developed using Visual Studio Code. All necessary launch configurations were added as part of the launch.json.
 
-##Inspiration
+## Inspiration
 The original idea about the implementation was inspired by the functionality of [IoT Hub Explorer](https://github.com/Azure/iothub-explorer) - "a tool that allows you to explore and test Azure IoT Hub features".
 The Event Monitor implementation: https://github.com/Azure/iothub-explorer/blob/master/iothub-explorer-monitor-events.js was key part to developing this sample.
 

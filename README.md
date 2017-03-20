@@ -14,8 +14,8 @@ The sample was build using:
 * Azure IoT Hub Client and Service SDK - https://github.com/azure/azure-iot-sdk-node
 * Azure Event Hub SDK - https://github.com/Azure/azure-event-hubs
 * Web App
-..* Express - https://github.com/expressjs/express
-..* Socket.io - https://socket.io/get-started/
+    * Express - https://github.com/expressjs/express
+    * Socket.io - https://socket.io/get-started/
 
 ### Visual Studio Code
 

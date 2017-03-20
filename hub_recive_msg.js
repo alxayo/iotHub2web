@@ -2,6 +2,7 @@
 
 //read from the local configuration
 var config = require('./config.json');
+var webapp = require('web/app.js'); 
 
 var EventHubsClient = require('azure-event-hubs').Client;
 
